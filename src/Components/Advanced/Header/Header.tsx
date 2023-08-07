@@ -2,15 +2,22 @@
 
 // Libraries
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 // Hooks
 import useWindowSize from "@/hooks/useWindowSize";
 
+// Utils
+import classNames from "@/Utils/classNames";
+
+// Contexts
+import useTheme from "@/context/useTheme";
+
 // Icons
 import logo from "@/Assets/logos/Logo.png";
+import altLogo from "@/Assets/logos/altLogo.png";
 
 //Styles
 import Style from "./Header.module.css";
@@ -34,19 +41,30 @@ const navData = [
   { title: "About Us", path: "/about" },
   { title: "Blogs", path: "/blog" },
 ];
+
 export default function Header() {
   // Variables
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const windowSize = useWindowSize();
   const { width } = windowSize;
-
+  const { theme } = useTheme();
+ 
   return (
-    <header className={Style.header}>
+    <header
+      className={classNames(
+        Style.header,
+        theme === "dark" ? "darkTheme" : "lightTheme"
+      )}
+    >
       <div
         className={width && width > 1440 ? Style.navbar : Style.navbarMobile}
       >
         <Link href="/">
-          <Image src={logo} alt="My Image" className={Style.logo} />
+          <Image
+            src={theme === "dark" ? logo : altLogo}
+            alt="My Image"
+            className={Style.logo}
+          />
         </Link>
         <nav
           className={

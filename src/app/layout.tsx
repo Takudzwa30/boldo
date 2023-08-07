@@ -1,6 +1,9 @@
 // Libraries
 import type { Metadata } from "next";
 
+// Theme Context
+import { ThemeProvider } from "@/context/useTheme";
+
 // Components
 import Header from "@/Components/Advanced/Header/Header";
 import Footer from "@/Components/Advanced/Footer/Footer";
@@ -21,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

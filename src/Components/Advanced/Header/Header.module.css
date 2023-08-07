@@ -78,7 +78,7 @@
 }
 
 .menuList a {
-  color: var(--light-text-color);
+  color: var(--secondary-color);
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -125,7 +125,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #0A2640;
+    background: #0a2640;
 
     width: 100%;
     display: flex;
@@ -171,7 +171,7 @@
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     margin: 5px 0;
     transition: all 0.3s ease;
   }

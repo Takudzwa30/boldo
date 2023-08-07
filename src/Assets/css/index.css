@@ -15,7 +15,18 @@ html {
 :root {
   --white-color: #fff;
   --green-color: #049a5b;
+  --blue-color: #0a2640;
   --grey-color: #dddddd;
+}
+
+.lightTheme {
+  --primary-color: var(--white-color);
+  --secondary-color: var(--blue-color);
+}
+
+.darkTheme {
+  --primary-color: var(--blue-color);
+  --secondary-color: var(--white-color);
 }
 
 /* SCROLLBAR Customizations */
