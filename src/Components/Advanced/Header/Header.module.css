@@ -9,6 +9,8 @@
 
 .header {
   position: relative;
+  margin-inline: auto;
+  max-width: 1440px;
 }
 
 .logo {
@@ -33,16 +35,17 @@
 .navbar {
   background: transparent;
   justify-content: space-between;
+  padding-inline: 40px;
 }
 
 .navbarMobile {
   justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .navbar,
 .navbarMobile {
   height: 80px;
-  padding: 10px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -125,7 +128,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #0a2640;
+    background: var(--primary-color);
 
     width: 100%;
     display: flex;
@@ -186,6 +189,9 @@
   }
   .menuList {
     align-items: center;
+  }
+  .menuList a {
+    color: var(--secondary-color);
   }
 }
 

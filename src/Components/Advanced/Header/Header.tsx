@@ -48,7 +48,7 @@ export default function Header() {
   const windowSize = useWindowSize();
   const { width } = windowSize;
   const { theme } = useTheme();
- 
+
   return (
     <header
       className={classNames(
@@ -57,7 +57,7 @@ export default function Header() {
       )}
     >
       <div
-        className={width && width > 1440 ? Style.navbar : Style.navbarMobile}
+        className={width && width > 768 ? Style.navbar : Style.navbarMobile}
       >
         <Link href="/">
           <Image
@@ -109,11 +109,15 @@ const LinksDropDown = ({ title, path, setMenuOpen }: navProps) => {
   const pathname = usePathname();
   const isActive = pathname === path;
 
+  // interface oldStateProps {
+  //   old: boolean;
+  // }
+
   return (
     <li>
       <Link
         onClick={() => {
-          setMenuOpen(true);
+          setMenuOpen(false);
           document.documentElement.scrollTop = 0;
         }}
         className={isActive ? Style.pageActive : ""}
