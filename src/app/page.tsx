@@ -1,7 +1,7 @@
 "use client";
 
 // Components
-import HeroSection from "@/Components/HomePage/HeroSection/HeroSection";
+import HeroSection from "@/app/home/Components/HeroSection/HeroSection";
 
 // Libraries
 import { useEffect } from "react";
