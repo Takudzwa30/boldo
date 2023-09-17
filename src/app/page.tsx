@@ -1,7 +1,7 @@
 "use client";
 
 // Components
-import HeroSection from "@/app/home/Components/HeroSection/HeroSection";
+import Home from "@/app/home/page";
 
 // Libraries
 import { useEffect } from "react";
@@ -9,17 +9,15 @@ import { useEffect } from "react";
 // Context
 import useTheme from "@/context/useTheme";
 
-export default function Home() {
+export default function App() {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setTheme("dark");
   });
   return (
-    <div className={theme === "dark" ? "darkTheme" : "lightTheme"}>
-      <section>
-        <HeroSection />
-      </section>
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
