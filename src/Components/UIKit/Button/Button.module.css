@@ -1,0 +1,52 @@
+.btnDefault,
+.greenBtn,
+.whiteBtn {
+  padding: 15px 50px;
+  border-radius: 56px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.btnDefault:disabled,
+.whiteBtn:disabled,
+.greenBtn:disabled {
+  cursor: not-allowed;
+}
+
+.btnDefault {
+  border: 2px solid var(--white-color);
+  background: var(--blue-color);
+  color: var(--white-color);
+}
+
+.btnDefault:hover {
+  border: 2px solid var(--blue-color);
+  background: var(--white-color);
+  color: var(--blue-color);
+}
+
+.whiteBtn {
+  border: 2px solid var(--blue-color);
+  background: var(--white-color);
+  color: var(--blue-color);
+}
+
+.whiteBtn:hover {
+  border: 2px solid var(--white-color);
+  background: var(--blue-color);
+  color: var(--white-color);
+}
+
+.greenBtn {
+  color: #0a2640;
+  background: #65e4a3;
+  border: 2px solid #65e4a3;
+}
+
+.greenBtn:hover {
+  color: #65e4a3;
+  background: #0a2640;
+  border: 2px solid #65e4a3;
+}
