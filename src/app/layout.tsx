@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/context/useTheme";
 // Components
 import Header from "@/Components/Advanced/Header/Header";
 import Footer from "@/Components/Advanced/Footer/Footer";
+import ContactUs from "@/Components/UIKit/contactUs/contactUs";
 
 // Styles
 import "../Assets/css/index.css";
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           {children}
+          <ContactUs />
           <Footer />
         </ThemeProvider>
       </body>
