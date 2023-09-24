@@ -1,7 +1,7 @@
 .btnDefault,
 .greenBtn,
 .whiteBtn {
-  padding: 15px 50px;
+  padding: 12px 50px;
   border-radius: 56px;
   cursor: pointer;
   transition: all 0.3s ease;

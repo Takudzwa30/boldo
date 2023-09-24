@@ -9,6 +9,9 @@ import Image from "next/image";
 // Hooks
 import useWindowSize from "@/hooks/useWindowSize";
 
+// Components
+import Button from "@/Components/UIKit/Button/Button";
+
 // Utils
 import classNames from "@/Utils/classNames";
 
@@ -56,9 +59,7 @@ export default function Header() {
         theme === "dark" ? "darkTheme" : "lightTheme"
       )}
     >
-      <div
-        className={width && width > 768 ? Style.navbar : Style.navbarMobile}
-      >
+      <div className={width && width > 768 ? Style.navbar : Style.navbarMobile}>
         <Link href="/">
           <Image
             src={theme === "dark" ? logo : altLogo}
@@ -85,6 +86,7 @@ export default function Header() {
                 />
               );
             })}
+            <Button version="white"> Log in</Button>
           </ul>
         </nav>
 
