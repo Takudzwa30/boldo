@@ -13,7 +13,10 @@ const BlogCard: React.FC<Blog> = ({
 }) => {
   return (
     <div className={Style.card}>
-      <Image src={image} alt="blog Image" />
+      <div
+        className={Style.cardImage}
+        style={{ background: `url(${image.src}) center / cover no-repeat` }}
+      />
       <div className={Style.catDateWrapper}>
         <h6>{category}</h6>
         <h6>{date}</h6>
