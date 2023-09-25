@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/context/useTheme";
 // Components
 import Header from "@/Components/Advanced/Header/Header";
 import Footer from "@/Components/Advanced/Footer/Footer";
-import ContactUs from "@/Components/UIKit/contactUs/contactUs";
+import ContactUs from "@/Components/UIKit/contactUs/ContactUs";
 
 // Styles
 import "../Assets/css/index.css";
