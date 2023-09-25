@@ -1,4 +1,5 @@
 interface Blog {
+  id?: number;
   image: StaticImageData;
   category: string;
   date: string;

@@ -15,7 +15,6 @@ import Button from "@/Components/UIKit/Button/Button";
 
 const HeroSectioin: React.FC = () => {
   const { theme, setTheme } = useTheme();
-  console.log(theme);
   useEffect(() => {
     setTheme("dark");
   });

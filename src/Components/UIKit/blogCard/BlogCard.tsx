@@ -17,15 +17,15 @@ const BlogCard: React.FC<Blog> = ({
         className={Style.cardImage}
         style={{ background: `url(${image.src}) center / cover no-repeat` }}
       />
-      <div className={Style.catDateWrapper}>
-        <h6>{category}</h6>
-        <h6>{date}</h6>
-      </div>
-      <h4>{blogText}</h4>
-      <div className={Style.userWrapper}>
-        <Image src={userImage} alt="user image" />
-        <h6>{name}</h6>
-      </div>
+        <div className={Style.catDateWrapper}>
+          <h6>{category}</h6>
+          <h6>{date}</h6>
+        </div>
+        <h4>{blogText}</h4>
+        <div className={Style.userWrapper}>
+          <Image src={userImage} alt="user image" />
+          <h6>{name}</h6>
+        </div>
     </div>
   );
 };
