@@ -17,17 +17,20 @@ const Blogs: React.FC = () => {
         <h1>Value proposition accelerator product management venture</h1>
       </div>
       <div className={Style.blogsGrid}>
-        {blogs.map((blog: Blog, index: number) => (
-          <BlogCard
-            key={index}
-            image={blog.image}
-            category={blog.category}
-            date={blog.date}
-            blogText={blog.blogText}
-            name={blog.name}
-            userImage={blog.userImage}
-          />
-        ))}
+        {blogs.map(
+          (blog: Blog, index: number) =>
+            index < 3 && (
+              <BlogCard
+                key={index}
+                image={blog.image}
+                category={blog.category}
+                date={blog.date}
+                blogText={blog.blogText}
+                name={blog.name}
+                userImage={blog.userImage}
+              />
+            )
+        )}
       </div>
       <div className={Style.btnWrapper}>
         <Button version="white">see more</Button>
