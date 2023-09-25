@@ -1,0 +1,36 @@
+.heading {
+  color: #000;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 70px;
+}
+
+.btnWrapepr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 991px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading {
+    text-align: center;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}

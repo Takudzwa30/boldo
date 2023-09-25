@@ -7,6 +7,7 @@ import useTheme from "@/context/useTheme";
 
 // Components
 import HeroSection from "./components/heroSection/HeroSection";
+import Blogs from "./components/blogs/Blogs";
 
 const page: React.FC = () => {
   const { setTheme } = useTheme();
@@ -18,6 +19,9 @@ const page: React.FC = () => {
     <>
       <section>
         <HeroSection />
+      </section>
+      <section>
+        <Blogs />
       </section>
     </>
   );
