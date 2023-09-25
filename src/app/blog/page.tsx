@@ -17,9 +17,7 @@ const page: React.FC = () => {
   });
   return (
     <>
-      <section>
-        <HeroSection />
-      </section>
+      <HeroSection />
       <section>
         <Blogs />
       </section>
