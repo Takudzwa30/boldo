@@ -1,0 +1,39 @@
+.cta {
+  background: url("../../../Assets/images/ctaBG.png") center / cover no-repeat;
+  padding-block: 70px;
+  padding-inline: 20px;
+  border-radius: 12px;
+}
+
+.cta h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.fieldWrapper {
+  position: relative;
+}
+
+.error {
+  color: red;
+  position: absolute;
+  top: 50px;
+  left: 32px;
+}
+
+.fieldWrapper > input {
+  width: 370px;
+  padding: 12px 30px;
+  border-radius: 240px;
+}
