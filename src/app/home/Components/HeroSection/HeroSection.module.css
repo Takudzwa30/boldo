@@ -23,10 +23,10 @@
   margin-block: 15px 40px;
 }
 
-.heroImg {
-  background: url("../../../../Assets/images/home-hero-img.png") center / cover
-    no-repeat;
-  height: 423px;
+.heroGrid img {
+  margin-inline: auto;
+  max-width: 493.858px;
+  max-height: 423px;
   width: 100%;
 }
 
@@ -36,7 +36,27 @@
 }
 
 @media screen and (max-width: 991px) {
+  .hero {
+    padding-top: 120px;
+  }
+
   .heroGrid {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .btnWrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btnWrapper {
+    flex-direction: column;
+    max-width: 300px;
+    margin-inline: auto;
+  }
+  .heroGrid img {
+    height: unset;
   }
 }

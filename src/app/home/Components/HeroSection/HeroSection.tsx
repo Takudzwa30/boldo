@@ -9,10 +9,14 @@ import useTheme from "@/context/useTheme";
 // Components
 import Wrapper from "@/Components/UIKit/Wrapper/Wrapper";
 
+// Images
+import heroBG from "@/Assets/images/home-hero-img.png";
+
 // Styles
 import Style from "./HeroSection.module.css";
 import Button from "@/Components/UIKit/Button/Button";
 import ImageSliders from "../ImageSliders/ImageSliders";
+import Image from "next/image";
 
 const HeroSectioin: React.FC = () => {
   const { theme, setTheme } = useTheme();
@@ -35,9 +39,9 @@ const HeroSectioin: React.FC = () => {
               <Button>Explore</Button>
             </div>
           </div>
-          <div className={Style.heroImg} />
+          <Image src={heroBG} alt="charts" />
         </div>
-        <ImageSliders />
+        {/* <ImageSliders /> */}
       </Wrapper>
     </div>
   );
