@@ -1,0 +1,91 @@
+.headings {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.headings h4 {
+  color: #777;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.headings h1 {
+  color: #000;
+  text-align: center;
+  max-width: 942px;
+  margin-inline: auto;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.cardImage {
+  height: 350px;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.card h3 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-block: 24px 12px;
+}
+
+.card h4 {
+  color: #777;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.linkWrapper {
+  width: fit-content;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: width 0.4s ease;
+}
+
+.link {
+  color: #0a2640;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link h4 {
+  font-weight: 700;
+}
+
+.link svg {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.linkWrapper .linkUnderLine {
+  background: #0a2640;
+  width: 0%;
+  height: 1px;
+  margin-top: 8px;
+  transition: width 0.4s ease;
+}
+
+.linkWrapper:hover .linkUnderLine {
+  width: 100%;
+}
+
+.linkWrapper:hover {
+  scale: 1.05;
+}
+
+@media screen and (max-width: 991px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}
