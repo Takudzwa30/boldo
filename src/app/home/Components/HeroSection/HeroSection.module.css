@@ -1,4 +1,42 @@
 .hero {
-  padding-top: 100px;
+  padding-block: 150px 65px;
   background: var(--blue-color);
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.heroGrid h1 {
+  color: #fff;
+  font-weight: 400;
+  line-height: normal; /* 150% */
+}
+
+.heroGrid h6 {
+  color: #f1f1f1;
+  font-weight: 400;
+  line-height: normal;
+  margin-block: 15px 40px;
+}
+
+.heroImg {
+  background: url("../../../../Assets/images/home-hero-img.png") center / cover
+    no-repeat;
+  height: 423px;
+  width: 100%;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 25px;
+}
+
+@media screen and (max-width: 991px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
 }
