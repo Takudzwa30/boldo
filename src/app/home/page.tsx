@@ -4,6 +4,7 @@ import React from "react";
 import HeroSectioin from "./Components/HeroSection/HeroSection";
 import Blogs from "./Components/blogs/Blogs";
 import Services from "./Components/services/Services";
+import CustomRow from "@/Components/UIKit/customRow/CustomRow";
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,12 @@ const Home: React.FC = () => {
       </section>
       <section>
         <Services />
+      </section>
+      <section>
+        <CustomRow version="left" />
+      </section>
+      <section>
+        <CustomRow version="right" />
       </section>
       <section>
         <Blogs />

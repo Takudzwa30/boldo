@@ -1,0 +1,86 @@
+.rowGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.rowGrid > img {
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.textWrapper h2 {
+  color: #000;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textWrapper ul li {
+  line-height: normal;
+}
+
+.textWrapper ul {
+  margin-block: 40px;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.check,
+.point {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.check {
+  margin-bottom: 25px;
+}
+
+.point {
+  color: #000;
+  transition: 0.3s ease all;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
+}
+
+.point:hover {
+  background: #0a2640;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.point > svg path {
+  stroke: #0a2640;
+  transition: 0.3s ease all;
+}
+
+.point:hover > svg path {
+  stroke: white;
+}
+
+@media screen and (max-width: 991px) {
+  .rowGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .rowGrid > img {
+    order: 1 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .rowGrid > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rowGrid > img {
+    max-height: 450px;
+  }
+}
