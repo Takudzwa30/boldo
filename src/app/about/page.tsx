@@ -9,12 +9,14 @@ export default function () {
   const { setTheme } = useTheme();
 
   useEffect(() => {
-    setTheme("light");
+    setTheme("dark");
   });
 
   return (
     <>
-      <HeroSection />
+      <section>
+        <HeroSection />
+      </section>
     </>
   );
 }
