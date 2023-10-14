@@ -1,8 +1,13 @@
 "use client";
 
+// Libraries
 import { useEffect } from "react";
 
+// Components
+import StoryNumbers from "./components/storyNumbers/StoryNumbers";
 import HeroSection from "./components/HeroSection/HeroSection";
+
+// Contexts
 import useTheme from "@/context/useTheme";
 
 export default function () {
@@ -16,6 +21,9 @@ export default function () {
     <>
       <section>
         <HeroSection />
+      </section>
+      <section>
+        <StoryNumbers />
       </section>
     </>
   );
