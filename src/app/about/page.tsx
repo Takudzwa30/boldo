@@ -9,6 +9,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 
 // Contexts
 import useTheme from "@/context/useTheme";
+import Team from "@/Components/UIKit/team/Team";
 
 export default function () {
   const { setTheme } = useTheme();
@@ -24,6 +25,9 @@ export default function () {
       </section>
       <section>
         <StoryNumbers />
+      </section>
+      <section>
+        <Team />
       </section>
     </>
   );
