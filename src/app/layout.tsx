@@ -2,15 +2,11 @@
 import type { Metadata } from "next";
 
 // Theme Context
-import { ThemeProvider } from "@/context/useTheme";
-
-// Components
-import Header from "@/Components/Advanced/Header/Header";
-import Footer from "@/Components/Advanced/Footer/Footer";
-import ContactUs from "@/Components/UIKit/contactUs/ContactUs";
+// import { ThemeProvider } from "@/context/useTheme";
 
 // Styles
 import "../Assets/css/index.css";
+import App from "./App";
 
 export const metadata: Metadata = {
   title: "Boldo",
@@ -22,19 +18,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
-      <body>
-        <ThemeProvider>
-          <Header />
-          {children}
-          <ContactUs />
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+  return <App>{children}</App>;
 }

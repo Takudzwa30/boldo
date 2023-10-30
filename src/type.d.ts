@@ -7,3 +7,5 @@ interface Blog {
   name: string;
   userImage: StaticImageData;
 }
+
+declare module "@hybris-software/ui-kit";

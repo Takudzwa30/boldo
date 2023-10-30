@@ -7,14 +7,14 @@ import Home from "@/app/home/page";
 import { useEffect } from "react";
 
 // Context
-import useTheme from "@/context/useTheme";
+// import useTheme from "@/context/useTheme";
 
 export default function App() {
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
 
-  useEffect(() => {
-    setTheme("dark");
-  });
+  // useEffect(() => {
+  //   setTheme("dark");
+  // });
   return (
     <>
       <Home />
