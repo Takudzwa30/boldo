@@ -1,0 +1,94 @@
+.image {
+  background: url("../../../../Assets/images/accordionImage.png") center / cover
+    no-repeat;
+  border-radius: 24px;
+  height: 435px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.row h2 {
+  color: #000;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ------------------  Accordion ----------------------*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  cursor: pointer;
+  color: #000;
+}
+
+.headingContainer h5 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text,
+.activeText {
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1rem;
+
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal; 
+  transition: all 0.3s ease-in-out;
+}
+
+.activeText {
+  height: 0px;
+  overflow: hidden;
+}
+
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 30px;
+}
+
+.icon,
+.iconActive {
+  transition: all 0.3s ease-in-out;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.iconActive {
+  color: #5e6078;
+}
+
+.icon {
+  color: #7684ff;
+  rotate: 45deg;
+}
+
+.halfSeparator {
+  max-width: 50%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
