@@ -1,6 +1,7 @@
 "use client";
 
-import { ThemeProvider } from "@hybris-software/ui-kit";
+// import { ThemeProvider } from "@hybris-software/ui-kit";
+import { ThemeProvider } from "@/context/useTheme";
 import theme from "@/Data/theme";
 
 // Components
@@ -15,8 +16,8 @@ export default function App({ children }: { children: React.ReactNode }) {
             <link rel="icon" href="/favicon.ico" sizes="any" />
          </head>
          <body>
-            <ThemeProvider theme={theme}>
-               {/* <Header /> */}
+            <ThemeProvider>
+               <Header />
                {children}
                <ContactUs />
                <Footer />
